@@ -1,8 +1,11 @@
 // STEP 1: Initialize game variables
 			// STEP 1a: Pick random number
-			
+			let randomNumber= Math.floor(Math.random() *100) +1; 
+            
 			// STEP 1b: Create variables to represent the three paragraphs above that will contain user feedback
-			
+			let guesses = document.querySelector('#guesses');
+            let lastResult = document.querySelector('#lastResult');
+            let lowOrHi = document.querySelector('#lowOrHi');
 
 			// STEP 1c: Create variables to represent the guessing form
 
