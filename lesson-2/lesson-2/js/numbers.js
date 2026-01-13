@@ -1,5 +1,4 @@
-let a = 10;
-console.log(a);
+
   
   
   /* STEP 1: Number types (integer, float, and double)
@@ -22,7 +21,7 @@ console.log(a);
 
         /* STEP 2: Arithmetic operators
         + (addition), - (subtraction), * (multiplication), / (division), % (remainder or modulo), ** (exponent) */
-        let 
+        
 
         // Try declaring and initializing a couple of variables as numbers
 
@@ -35,8 +34,35 @@ console.log(a);
         /* If you want to avoid this precedence, use parenthesis
         (num1 + num2) * 5 - 25 */
 
+    
+        let step2b = 90 + 60 * 5 - 25;
+        output.textContent = step2b; // Outputs: 365
+
         /* STEP 3: Increment and decrement operators
         ++ and -- are mostly found inside loops to move a counter variable to the next value when needed, either up or down. */
+        let x = 5;
+        x++; // incrementing x by 1
+        console.log("x: " + x); // Outputs: 6
+        x--; // decrementing x by 1
+        console.log("x: " + x); // Outputs: 5
+
+
+        //Post Increment 
+        //uses the current value of x, then increments it
+
+        let y= x++
+        console.log("y: " + y); // Outputs: 5
+        console.log("x after post-increment: " + x); // Outputs: 6
+
+
+        //Pre Increment
+        //increments the value of x first, then uses the new value
+
+        let a= 5;
+        let b= ++a
+        console.log("b: " + b); // Outputs: 6
+        console.log("a after pre-increment: " + a); // Outputs: 6
+        
 
 
         // Note 1 - you cannot increment/decrement a number directly
