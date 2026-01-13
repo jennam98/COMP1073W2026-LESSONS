@@ -4,12 +4,25 @@ console.log(a);
   
   /* STEP 1: Number types (integer, float, and double)
         declare and initialize an integer and a float, then in the console, reveal the number type with typeof(varName) */
-        
+        let output = document.querySelector('p');
         // Note - there are also different number systems: binary, octal, and hexadecimal
+
+        let myInt = 10;
+        let myFloat = 10.5646;
+        let typeTest= typeof(myFloat); // returns 'number' for both integer and float
+        output.textContent = typeTest;
+
+        let binNum = 0b1010; // 0b indicates binary
+        console.log("Binary " + binNum); // Outputs: 10
+        let octNum = 0o12; // 0o indicates octal
+        console.log("Octal " + octNum); // Outputs: 10
+        let hexNum = 0xA; // 0x indicates hexadecimal
+        console.log("Hexadecimal " + hexNum); // Outputs: 10 
+
 
         /* STEP 2: Arithmetic operators
         + (addition), - (subtraction), * (multiplication), / (division), % (remainder or modulo), ** (exponent) */
-
+        let 
 
         // Try declaring and initializing a couple of variables as numbers
 
