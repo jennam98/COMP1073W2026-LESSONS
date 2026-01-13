@@ -15,27 +15,64 @@
 		Use a-z, 0-9, A-Z and underscores, avoiding reserved names
 		All program variables are generally declared at the beginning */
 
+		let myName;
+		let myAge;
+		let string;
+		let para = document.querySelector('p');
+
 
 		/* STEP 2: Initialize variables
 		Don't confuse a variable with no value with one that doesn't exist at all */
+		myName = "Jenna Moss";
+		myAge = 27;
 
 
 		/* STEP 3: Updating variables
 		Once a variable has been declared, this can be done any time */
-
+		myName = "Jenna M.";
+		myAge = 28;
+		string = "My name is " + myName + " and I am " + myAge + " years old.";
+		para.textContent = string;
 
 		// STEP 4: Variable types (use typeof in the console)
 		// Numbers
+		let numCourse = 6;
+		para.textContent = "I am enrolled in " + numCourse + " courses this semester.";
+		console.log(typeof (numCourse)); // Outputs: number
 
 		// Strings (use '' or "")
 
+		let stringCourse ="Client-Side JavaScript";
+		para.textContent = "I am taking " + stringCourse + " this semester.";
+		console.log(typeof (stringCourse)); // Outputs: string
+
 		// Booleans
 
+		let iAmAlive = true;
+		let compare = 5 < 2;
+		para.textContent = "Is it true that I am alive? " + iAmAlive + ". Also, is 5 less than 2? " + compare + ".";
+		console.log("result of comparison 5 < 2: " + compare);
+
 		// Arrays
+
+		let myArray = ["apple", "banana", "cherry"];
+		para.textContent = myArray[1];
+
+
+		let myArray2 = [10,20,30];
+		para.textContent = myArray2[2];
 		
 		// Objects
 
+		let myDog = {fName: "Buddy", breed: "Golden Retriever", color: "Golden"};
+		console.log(myDog.fName); // Outputs: Buddy
+
 		// STEP 5: Typing (JavaScript is a loosely-typed language)
+
+		let myNumber = 10; // Initially a number
+		console.log(typeof (myNumber)); // Outputs: number
+		myNumber = false; // Now a boolean
+		console.log(typeof (myNumber)); // Outputs: boolean
 
 		//Difference between var and let
 		//1. Scope
