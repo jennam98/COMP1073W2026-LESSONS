@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Variables | COMP1073 Client-Side JavaScript</title>
 	<link href="css/styles.css" rel="stylesheet" />
+	<script src="./js/variables.js" defer></script>
 </head>
 
 <body>
@@ -35,6 +36,52 @@
 		// Objects
 
 		// STEP 5: Typing (JavaScript is a loosely-typed language)
+
+		//Difference between var and let
+		//1. Scope
+
+		function testScope() {
+			if(true){			//function scope
+				var a =10;
+			}
+			console.log(a); 
+
+			if(true){
+				var b =20;    //block scope
+			}
+			console.log(b); 
+		}
+
+		testScope();
+
+
+		//2. Re-declaration and hoisting
+
+		function demo() {
+			//Hoisting with var
+			console.log("vaule of x before declaration" , x); 
+			// var allows hoisting, interpreter moves declaration to the top and if no initialization it assigns undefined
+			var x = 10;
+
+			//Hoisting with let
+			let y =11; // let does not allow hoisting
+			console.log("value of y before declaration" , y);
+			//let y = 11;
+
+			//Re-declaration with var
+			var a = 15;
+			var a = 20; 
+			console.log("value of a after re-declaration with var: ", a);
+
+
+			//Re-declaration with let
+			let b = 25;
+			//let b = 30;
+			console.log("value of b after re-declaration with let: ", b);
+
+		}
+
+		demo();
 
 
 	</script>
