@@ -70,7 +70,14 @@
 
         /* STEP 4: Assignment Operators
         = (assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment) */
-
+        let step4a = 5;
+        step4a /= 2; // same as step4a = step4a / 2
+        console.log("step4a: " + step4a); // Outputs: 2.5
 
         /* STEP 5: Comparison Operators
         ===	(strict equality), !==	(strict-non-equality), == (equality), < (less than), > (greater than), <= (less than or equal to), >=	(greater than or equal to) */
+
+        let c = 2;
+        let d = '2';
+        console.log(c === d); // Outputs: false (strict equality - checks value and type)
+        console.log(c == d); // Outputs: true (equality - checks value only)
